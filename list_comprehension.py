@@ -10,7 +10,15 @@ print(list1)
 
 #print table of no.
 no = 5
-print("Table of %d" % no)
+print("\nTable of %d" % no)
 table = [[no,b,no*b] for b in range(1, 11)]
 for i in table:
     print(i)
+
+# prime and noprime numbers in range 1-100
+
+noprime = [j for i in range(2, 8) for j in range(i*2, 100, i)]
+print("\nNoprime %s" % noprime)
+
+prime = [x for x in range(2, 100) if x not in noprime]
+print("\nPrime %s" % prime)
